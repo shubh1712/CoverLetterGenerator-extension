@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(5, 0, 95);
+    border-radius: 2rem;
+    color: rgb(216, 217, 217);
+    width: 700px;
+    padding: 1rem;
+}
+.title{
+    text-align: center;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
+  background: #222;
+  border-radius: .4em;
+  transition: background .3s;
+  justify-content: center;
+  &:hover {
+     cursor: pointer;
+     background: #000;
+  }
+}
+    
+.file-upload__input {
+    width:100%;
+    height: 100%;
+    opacity: 0;
+}
+
