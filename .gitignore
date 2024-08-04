@@ -1,3 +1,9 @@
 # .gitignore
 config.js
-.gitignore
+gitignore 
+bootstrap.bundle.min.js
+bootstrap.min.css
+docx.min.js
+google-generative-ai.js
+pdf.min.js
+pdf.worker.min.js

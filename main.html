@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -80,6 +80,141 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.worker.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter Generator</title>
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <h2 class="title">Cover Letter Generator</h2>
+  <form action="" class="p-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Your Expertise</span>
+      <input type="text" class="form-control" placeholder="Your Expertise" aria-label="Your Expertise" id="expertise" aria-describedby="basic-addon1" />
+    </div>
+    <div class="mb-3">
+      <label for="jd" class="form-label">Job Description</label>
+      <textarea class="form-control" id="jd" rows="2"></textarea>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon2">Years of Experience</span>
+      <input type="number" class="form-control" placeholder="Years of Experience" aria-label="Years of Experience" aria-describedby="basic-addon2" id="experience" />
+    </div>
+    <div class="mb-3">
+      <label for="resume" class="form-label">Work Experience Details (Resume)</label>
+      <textarea class="form-control" id="resume" rows="2"></textarea>
+    </div>
+    <hr />
+    <h3 class="title">OR</h3>
+    <label for="upload" class="file-upload__label">Upload Resume</label>
+    <input id="upload" class="file-upload__input" type="file" name="file-upload" />
+    <span id="file-name" class="mt-2 d-block"></span>
+    <button id="generate" type="button" class="mt-3 btn btn-primary">
+      Generate Cover Letter
+      <span id="loader" class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true" style="display: none;"></span>
+    </button>
+    <div class="mt-3">
+      <label for="output" class="form-label">Generated Cover Letter</label>
+      <textarea class="form-control" id="output" rows="15"></textarea>
+    </div>
+    <button id="download" type="button" class="mt-3 btn btn-primary">Download as Word</button>
+  </form>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="pdf.min.js"></script>
+  <script src="pdf.worker.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter Generator</title>
+  <link
+    href="bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="main.css" />
+  <!-- No need for external CSP meta tag -->
+</head>
+<body>
+  <h2 class="title">Cover Letter Generator</h2>
+  <form action="" class="p-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Your Expertise</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Your Expertise"
+        aria-label="Your Expertise"
+        id="expertise"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="jd" class="form-label">Job Description</label>
+      <textarea class="form-control" id="jd" rows="2"></textarea>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon2">Years of Experience</span>
+      <input type="number" class="form-control" placeholder="Years of Experience" aria-label="Years of Experience" aria-describedby="basic-addon2" id="experience" />
+    </div>
+
+    <div class="mb-3">
+      <label for="resume" class="form-label">Work Experience Details (Resume)</label>
+      <textarea class="form-control" id="resume" rows="2"></textarea>
+    </div>
+
+    <hr />
+    <h3 class="title">OR</h3>
+    <label for="upload" class="file-upload__label">Upload Resume</label>
+    <input
+      id="upload"
+      class="file-upload__input"
+      type="file"
+      name="file-upload"
+    />
+    <span id="file-name" class="mt-2 d-block"></span>
+
+    <button id="generate" type="button" class="mt-3 btn btn-primary">
+      Generate Cover Letter
+      <span id="loader" class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true" style="display: none;"></span>
+    </button>
+
+    <div class="mt-3">
+      <label for="output" class="form-label">Generated Cover Letter</label>
+      <textarea class="form-control" id="output" rows="15"></textarea>
+    </div>
+    <button id="download" type="button" class="mt-3 btn btn-primary">Download as Word</button>
+  </form>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="pdf.min.js"></script>
+  <script src="pdf.worker.min.js"></script>
+  <script type="module" src="google-generative-ai.js"></script>
+  <script type="module" src="docx.min.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 </html>
